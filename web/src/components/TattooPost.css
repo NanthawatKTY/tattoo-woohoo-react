@@ -1,0 +1,42 @@
+.tattoo-post{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tattoo-post-bg{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.tattoo-post-content{
+    position: relative; /*The reason I used relative bc it'll be at the same place with absolute of .tattoo-post-bg*/
+    max-width: 1200px;
+    background-color: black;
+}
+
+.tattoo-post-content img{
+    display: block;
+    max-width: 100%;
+    
+    /* 100vh = 100% of display screen - 100% of px*/
+    max-height: calc(100vh - 120px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tattoo-post-content h4{
+    color: white;
+    text-align: center;
+}
+
